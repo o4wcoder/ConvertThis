@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#F0F8DB"
+    android:orientation="vertical"
+    android:padding="16dp" >
+
+    <LinearLayout
+        android:id="@+id/linearLayoutTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/editUnitText"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_grey_round_edge"
+            android:height="40dp"
+            android:inputType="numberDecimal"
+            android:padding="2dp"
+            android:text="1"
+            android:textColor="#000000"
+            android:textSize="20sp" >
+
+        </EditText>
+
+        <Spinner
+            android:id="@+id/unitDropDownSpinner"
+            android:layout_width="fill_parent"
+            android:layout_height="42dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown" />
+
+    </LinearLayout>
+
+           <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+    <TableLayout
+        android:id="@+id/TableLayoutResults"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp" >
+
+        <TableRow
+            android:id="@+id/TableRow0"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/border_grey" >
+
+            <TextView
+                android:id="@+id/TextView_Row0_Value"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="right|center_vertical"
+                android:height="35dp"
+                android:paddingRight="10dp"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextView_Row0_Unit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="left|center_vertical"
+                android:height="35dp"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/border_grey" >
+
+            <TextView
+                android:id="@+id/TextView_Row1_Value"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="right|center_vertical"
+                android:height="35dp"
+                android:paddingRight="10dp"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextView_Row1_Unit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="left|center_vertical"
+                android:height="35dp"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/border_grey" >
+
+            <TextView
+                android:id="@+id/TextView_Row2_Value"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="right|center_vertical"
+                android:height="35dp"
+                android:paddingRight="10dp"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextView_Row2_Unit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="left|center_vertical"
+                android:height="35dp"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/border_grey" >
+
+            <TextView
+                android:id="@+id/TextView_Row3_Value"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="right|center_vertical"
+                android:height="35dp"
+                android:paddingRight="10dp"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextView_Row3_Unit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="left|center_vertical"
+                android:height="35dp"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/border_grey" >
+
+            <TextView
+                android:id="@+id/TextView_Row4_Value"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="right|center_vertical"
+                android:height="35dp"
+                android:paddingRight="10dp"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextView_Row4_Unit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="left|center_vertical"
+                android:height="35dp"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/border_grey" >
+
+            <TextView
+                android:id="@+id/TextView_Row5_Value"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="right|center_vertical"
+                android:height="35dp"
+                android:paddingRight="10dp"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextView_Row5_Unit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="left|center_vertical"
+                android:height="35dp"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/border_grey" >
+
+            <TextView
+                android:id="@+id/TextView_Row6_Value"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="right|center_vertical"
+                android:height="35dp"
+                android:paddingRight="10dp"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextView_Row6_Unit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="left|center_vertical"
+                android:height="35dp"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/border_grey" >
+
+            <TextView
+                android:id="@+id/TextView_Row7_Value"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="right|center_vertical"
+                android:height="35dp"
+                android:paddingRight="10dp"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextView_Row7_Unit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="left|center_vertical"
+                android:height="35dp"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </TableRow>
+
+    </TableLayout>
+    </ScrollView>
+
+</LinearLayout>

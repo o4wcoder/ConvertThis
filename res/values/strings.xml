@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ConvertThis</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="One">One</string>
+    <string name="Two">Two</string>
+    <string name="Three">Three</string>
+    <string name="Weight">Weight</string>
+    <string name="Length">Length</string>
+    <string name="Volume">Volume</string>
+    <string name="Temperature">Temperature</string>
+</resources>
