@@ -6,10 +6,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.text.DecimalFormat;
 
-/* Class ConvertUtil 
+/** 
+ * Class ConvertUtil 
  * 
+ * @author: Chris Hare
  * Created: 1/18/2015
- * Author: Chris Hare
  * 
  * TODO Items
  * > Add comma to numbers above 1000 (DONE)
@@ -142,6 +143,11 @@ public class ConvertUtil {
 	/***********************************************************/
 	/*                   Private Methods                       */
 	/***********************************************************/
+	/**
+	 * Format the results of the measurement conversion 
+	 * @param d double result value
+	 * @return string result of the formatted value
+	 */
 	private static String formatResult(Double d) {
 		
 		//If value is less that 6 points of the format, then return value as is.

@@ -1,7 +1,4 @@
 package com.fourthwardcoder.android.convertthis;
-
-
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,6 +15,14 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.Window;
 
+/**
+ * ConvertThisActivity
+ * 
+ * Main Activity of the ConvertThis utility. This sets up the navigation tabs. 
+ * All other operatoins are done in the ConvertThisFragment
+ * @author chare
+ *
+ */
 public class ConvertThisActivity extends Activity {
 
 	/*********************************************************************/

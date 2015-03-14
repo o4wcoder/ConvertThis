@@ -23,7 +23,14 @@ import android.widget.Spinner;
 import android.widget.TableRow;
 import android.widget.TextView;
 
-
+/**
+ * ConvertThisFragment
+ * 
+ * Main Fragment for the measurement converstion utilitiy
+ * 
+ * @author Chris Hare
+ * 1/24/2015
+ */
 public class ConvertThisFragment extends Fragment implements Constants{
 
 	/****************************************************************/
@@ -165,6 +172,9 @@ public class ConvertThisFragment extends Fragment implements Constants{
 	/*****************************************************************************/
 	/*                              Private Methods                              */
 	/*****************************************************************************/
+	/**
+	 * Sets which row should be visible on each measurement type/tab
+	 */
 	private void setRowVisibility() {
 		
 		TableRow tRow0 = (TableRow)view.findViewById(R.id.TableRow0);
@@ -222,6 +232,12 @@ public class ConvertThisFragment extends Fragment implements Constants{
 		}
 	}
 	
+	/**
+	 * Set which type of measurement should be used based
+	 * on selection from the dropdown box
+	 * 
+	 * @param pos dropdown box position showing the measure unit
+	 */
 	private void setDataBasedOnUnitSelected(long pos) {
 		
 		if(tab == TabName.WEIGHT) {
@@ -239,6 +255,10 @@ public class ConvertThisFragment extends Fragment implements Constants{
 		
 	}
 	
+	/**
+	 * Set weight data
+	 * @param pos dropdown box position showing the measure unit
+	 */
 	private void setWeightData(long pos) {
 
 		TextView tvInput = (TextView)view.findViewById(R.id.editUnitText);
@@ -248,7 +268,6 @@ public class ConvertThisFragment extends Fragment implements Constants{
         if(inputStr.equals("") || inputStr.equals("."))
         	inputStr = "0";
         
- 		
 		//Select dropdown position
 		switch((int)pos){
 		case 0:
@@ -406,6 +425,10 @@ public class ConvertThisFragment extends Fragment implements Constants{
 		}
 	}
 	
+	/**
+	 * Set length data
+	 * @param pos dropdown box position showing the measure unit
+	 */
 	private void setLengthData(long pos) {
 		
 		TextView tvInput = (TextView)view.findViewById(R.id.editUnitText);
@@ -687,6 +710,10 @@ public class ConvertThisFragment extends Fragment implements Constants{
 		
 	}
 	
+	/**
+	 * Set volume data
+	 * @param pos dropdown box position showing the measure unit
+	 */
 	private void setVolumeData(long pos) {
 		
 		TextView tvInput = (TextView)view.findViewById(R.id.editUnitText);
@@ -774,6 +801,10 @@ public class ConvertThisFragment extends Fragment implements Constants{
 		
 	}
 	
+	/**
+	 * Set temperature data
+	 * @param pos dropdown box position showing the measure unit
+	 */
 	private void setTemperatureData(long pos) {
 		TextView tvInput = (TextView)view.findViewById(R.id.editUnitText);
 		String inputStr = tvInput.getText().toString();
